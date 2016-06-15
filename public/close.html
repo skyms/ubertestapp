@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    
+        <script src="https://officejsbeta.azurewebsites.net/office.debug.js"></script>
+    
+        <script>
+            //If inside Office dialog, the message parent to close the dialog
+            Office.initialize = function (reason) {
+                Office.context.ui.messageParent("success");
+            }
+        </script>
+</head>
+
+<body>
+    <p>Authentication successful. You can now close this window.</p>
+</body>
+
+</html>
